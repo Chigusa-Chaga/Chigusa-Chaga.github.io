@@ -31,7 +31,9 @@
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- 導航選單 -->
-            <img src="images/Logo4.png" alt="千草の映像手記圖 Logo" class="logo4" href="index.html">
+            <a href="index.html">
+                <img src="images/Logo4.png" alt="千草の映像手記圖 Logo" class="logo4">
+            </a>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row">
                 <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
                 <li class="nav-item"><a class="nav-link" href="news.html">最新消息</a></li>
@@ -45,43 +47,20 @@
 
     <!-- 頁面標題和標語 -->
     <header class="bg-light text-center py-5">
-        <div class="container">
-            <h1 class="display-4">千草の映像手記</h1>
-            <p class="lead">探尋日本點心與茶的文化之美</p>
-        </div>
+        <img src="images/偷懶版.png" alt="" class="header-png1">
     </header>
 
     <!-- 主內容 -->
     <main>
         <div class="content-container">
             <!-- 介紹區 -->
-            <section id="home">
+
+            <section id="home" class="honee">
                 <h1>歡迎來到千草の映像手記</h1>
-                <p>這裡是我對日本茶文化和點心的熱愛的表達。在這裡，你將會發現我對茶的熱情、各種美味的點心和許多有趣的故事。</p>
+                <img src="images/Logo1.png" alt="" class="logo1">
+                <p>這裡是我對日本茶文化和點心傳達熱愛的地方。<br>在這裡，你將會發現我對茶的熱情、各種美味的點心和許多有趣的故事。</p>
             </section>
 
-            <!-- 圖片輪播 -->
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/sample1.jpg" class="d-block w-100" alt="圖片 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/sample2.jpg" class="d-block w-100" alt="圖片 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/sample3.jpg" class="d-block w-100" alt="圖片 3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
             <!-- 最新消息區 -->
             <section id="latest-news">
@@ -111,18 +90,72 @@
                     </div>
                 </div>
             </section>
+
+            <!-- 最新作品 -->
+            <section id="portfolio" class="gallery">
+                <h2>最新作品</h2>
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid-item">
+                            <img src="images/85mm f5.6 1200s ISO 500/已發/5.png" alt="作品1">
+                            <div class="overlay">
+                                <a href="images/85mm f5.6 1200s ISO 500/已發/6.png">
+                                    <h3>2024.10.19</h3>
+                                    <p>Canon EOS 70D </br>85mm  f/32  1/125s  ISO 1600</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/85mm f5.6 1200s ISO 500/已發/9.png" alt="作品2">
+                            <div class="overlay">
+                                <a href="images/85mm f5.6 1200s ISO 500/已發/10.png">
+                                    <h3>2024.10.19</h3>
+                                    <p>Canon EOS 70D </br>85mm  f/25  1/125s  ISO 1600</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/85mm f5.6 1200s ISO 500/已發/12.png" alt="作品2">
+                            <div class="overlay">
+                                <a href="images/85mm f5.6 1200s ISO 500/已發/13.png">
+                                    <h3>2024.10.16</h3>
+                                    <p>Canon EOS 70D </br>85mm f/5.6 1/60s ISO 100</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/85mm f5.6 1200s ISO 500/已發/14.png" alt="作品2">
+                            <div class="overlay">
+                                <a href="images/85mm f5.6 1200s ISO 500/已發/15.png">
+                                    <h3>2024.10.20</h3>
+                                    <p>Canon EOS 70D </br>85mm  f/8  1/125s  ISO 100</p>
+                                </a>
+                            </div>
+                        </div>
+                <!-- 可以添加更多作品 -->
+
+                    </div>
+                </div>
+            </section>
+
+
         </div>
     </main>
+
+
+ 
+
 
     <!-- 網頁底部 -->
     <footer class="py-5 bg-dark">
         <div class="container text-center">
-            <a href="https://x.com/TZicJJmwdmiZH6s"><img src="images/9.png" alt="推特 Logo" class="logogo"></a>
-            <a href="https://www.flickr.com/photos/200254990@N05/albums"><img src="images/10.png" alt="Flickr Logo" class="logogo"></a>
-            <a href="https://pse.is/6lb7wm"><img src="images/12.png" alt="IG Logo" class="logogo"></a>
-            <p class="m-0 text-white">&copy; 2024 千草の映像手記 | <a href="https://Chigusa-Chaga.github.io" class="text-white">Chigusa-Chaga.github.io</a></p>
+            <a href="https://x.com/TZicJJmwdmiZH6s" target="_blank"><img src="images/9.png" alt="推特 Logo" class="logogo"></a>
+            <a href="https://www.flickr.com/photos/200254990@N05/albums" target="_blank"><img src="images/10.png" alt="Flickr Logo" class="logogo"></a>
+            <a href="https://pse.is/6lb7wm" target="_blank"><img src="images/12.png" alt="IG Logo" class="logogo"></a>
+            <p class="m-0 text-white">&copy; 2024 千草の映像手記 | <a href="https://Chigusa-Chaga.github.io" class="text-white" target="_blank">Chigusa-Chaga.github.io</a></p>
         </div>
     </footer>
+
 
 
     <!-- JavaScript 引入（包括 Bootstrap）-->

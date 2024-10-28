@@ -37,8 +37,9 @@ a:hover {
 /* 導航欄 */
 
 .logo1 {
-    height: 50px;
-    margin-right: 10px;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .logo2 {
@@ -48,15 +49,15 @@ a:hover {
 }
 
 .logo3 {
-    width: 350px;
-    margin-top: -10px;
-    margin-left: 14px;
+    width: 600px;
+    margin-top: -260px;
 }
 
 .logo4 {
     width: 450px; /* 這裡可以根據需要調整 Logo 的大小 */
     margin-right: 10px; /* 調整 Logo 和網站名稱之間的距離 */
     margin-top: -70px;
+    margin-left: 100px;
 }
 
 .npage-header {
@@ -66,6 +67,7 @@ a:hover {
 .navbar-nav {
     display: flex; /* 將導航選單設置為 Flexbox */
     justify-content: flex-end; /* 使選項靠右對齊 */
+    margin-right: 60px;
 }
 
 .nav-item {
@@ -119,24 +121,19 @@ a:hover {
 
 /* 標題區 */
 header {
-    background-color: #f2e7c5;
-    color: #333333;
-    padding: 2em 0;
+    background-color:#b1bcb0;
+    margin-top: -60px;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-header p {
-    font-size: 1.2em;
+.header-png1 {
+    width: 80%;
+    margin-left: 120px;
 }
 
 /* 主內容標題樣式 */
 #home h1 {
     font-size: 2rem;
-    color: #A5A051; /* 使用您指定的主題顏色 */
+    color: rgb(165, 160, 81); /* 使用您指定的主題顏色 */
     margin-bottom: 20px;
 }
 
@@ -146,6 +143,8 @@ header p {
     line-height: 1.6;
     color: #555;
 }
+
+
 
 /* 圖片輪播區 */
 .carousel {
@@ -233,6 +232,60 @@ footer p {
     margin-bottom: 15px;
     margin-left: 10px;
 }
+
+
+
+.container {
+    margin-top: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);/* 透明顏色 */
+    color: #fcfaf2;/* 字體顏色 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  .grid-item .overlay h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .grid-item .overlay p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+
 
 /* 媒體查詢：響應式設計 */
 @media (max-width: 768px) {
