@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+
+/* 全域樣式 */
+body {
+    font-family: 'Noto Serif TC', serif; /* 使用 Google 字體 */
+    line-height: 1.7;
+    color: #2b2121;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f5; /* 淡雅背景色 */
+}
+
+a {
+    color: #A5A051;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #A5A051; /* 主題色調 */
+}
+
+a:hover {
+    color: #7e7e3c;
+    text-decoration: underline;
+}
+/* 全域樣式 */
+
+/* 導航欄 */
+
+.logo1 {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo2 {
+    width: 150px;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+.logo3 {
+    width: 350px;
+    margin-top: -10px;
+    margin-left: 14px;
+}
+
+.logo4 {
+    width: 450px; /* 這裡可以根據需要調整 Logo 的大小 */
+    margin-right: 10px; /* 調整 Logo 和網站名稱之間的距離 */
+    margin-top: -70px;
+}
+
+.npage-header {
+    background-color: #EBEAE3; /* 導航欄背景 */
+}
+
+.navbar-nav {
+    display: flex; /* 將導航選單設置為 Flexbox */
+    justify-content: flex-end; /* 使選項靠右對齊 */
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0 15px; /* 調整左右邊距以創造間隔 */
+    margin-top: -170px;
+}
+
+.nav-link {
+    display: flex; /* 使鏈接內容居中 */
+    align-items: center; /* 垂直居中 */
+    padding: 0.5em; /* 增加內邊距 */
+}
+
+.nav-item li {
+    margin-left: 36px;
+}
+
+.nav-item a {
+    color: #6C6A2D;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+}
+
+.nav-item a:hover {
+    color: #A5A051;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* 垂直居中對齊 */
+    font-size: 1.5em;
+    color: #A5A051;
+    margin-left: 10px; /* 調整 Logo 和網站名稱之間的距離 */
+}
+
+.navbar-brand .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* 設置網頁的主要容器寬度並置中 */
+.content-container {
+    max-width: 800px; /* 設定最大寬度為800px */
+    margin: 0 auto; /* 自動左右邊距讓容器置中 */
+    padding: 20px; /* 添加內距讓內容不靠牆 */
+    text-align: center;
+}
+
+/* 標題區 */
+header {
+    background-color: #f2e7c5;
+    color: #333333;
+    padding: 2em 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* 主內容標題樣式 */
+#home h1 {
+    font-size: 2rem;
+    color: #A5A051; /* 使用您指定的主題顏色 */
+    margin-bottom: 20px;
+}
+
+/* 主內容段落樣式 */
+#home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 圖片輪播區 */
+.carousel {
+    margin-bottom: 2em;
+}
+
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* 調整輪播箭頭為白色 */
+}
+
+/* 最新消息區 */
+#latest-news {
+    background-color: #f8f8f5;
+    padding: 3em 0;
+}
+
+#latest-news h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#latest-news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#latest-news ul li {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+#latest-news ul li a {
+    color: #A5A051;
+}
+
+/* 推薦閱讀區 */
+#featured-articles {
+    padding: 3em 0;
+    text-align: center;
+}
+
+#featured-articles .container h2 {
+    margin-bottom: 2em;
+}
+
+#featured-articles .col-md-3 h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#featured-articles .col-md-3 h3 a {
+    color: #333333;
+}
+
+#featured-articles .col-md-3 h3 a:hover {
+    color: #7e7e3c;
+}
+
+/* 底部區域 */
+footer {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center;    /* 垂直置中（如果有高度的話） */
+    background-color: #4B4B4B;
+    padding: 1.5em 0;
+}
+
+/* 底部文字樣式 */
+footer p {
+    color: #A5A051;
+    margin: 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.logogo {
+    width: 45px; /* 這裡可以根據需要調整 Logo 的大小 */
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+/* 媒體查詢：響應式設計 */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #featured-articles .col-md-3 h3 {
+        font-size: 1em;
+    }
+}
+

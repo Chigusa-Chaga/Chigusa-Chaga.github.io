@@ -1,0 +1,135 @@
+<!-- 首頁網頁 -->
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="千草の映像手記 - 日本點心與茶文化介紹" />
+    <meta name="author" content="Chigusa Chaga" />
+    <title>千草の映像手記</title>
+
+    <!-- 網站小圖標 -->
+    <link rel="icon" type="image/x-icon" href="images/Logo1.png">
+
+    <!-- Google 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <!-- 核心 CSS 文件（包含 Bootstrap）-->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 響應式導航欄 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between align-items-center"> <!-- 使用 Flexbox 將元素左右對齊 -->
+        <!-- 移動設備的導航按鈕 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- 導航選單 -->
+            <img src="images/Logo4.png" alt="千草の映像手記圖 Logo" class="logo4" href="index.html">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row">
+                <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">最新消息</a></li>
+                <li class="nav-item"><a class="nav-link" href="articles.html">文章</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">關於我</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- 頁面標題和標語 -->
+    <header class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">千草の映像手記</h1>
+            <p class="lead">探尋日本點心與茶的文化之美</p>
+        </div>
+    </header>
+
+    <!-- 主內容 -->
+    <main>
+        <div class="content-container">
+            <!-- 介紹區 -->
+            <section id="home">
+                <h1>歡迎來到千草の映像手記</h1>
+                <p>這裡是我對日本茶文化和點心的熱愛的表達。在這裡，你將會發現我對茶的熱情、各種美味的點心和許多有趣的故事。</p>
+            </section>
+
+            <!-- 圖片輪播 -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/sample1.jpg" class="d-block w-100" alt="圖片 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sample2.jpg" class="d-block w-100" alt="圖片 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sample3.jpg" class="d-block w-100" alt="圖片 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- 最新消息區 -->
+            <section id="latest-news">
+                <h2>最新消息</h2>
+                <ul>
+                    <li><a href="#">2024年茶文化節即將來臨！</a></li>
+                    <li><a href="#">新系列點心介紹：秋季特別款</a></li>
+                    <li><a href="#">特邀嘉賓：茶道專家分享會</a></li>
+                </ul>
+            </section>
+
+            <!-- 推薦閱讀區 -->
+            <section id="featured-articles">
+                <h2>推薦閱讀</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3><a href="#">茶的歷史與演變</a></h3>
+                    </div>
+                    <div class="col-md-3">
+                        <h3><a href="#">如何品茶：從初學到專家</a></h3>
+                    </div>
+                    <div class="col-md-3">
+                        <h3><a href="#">點心的藝術：製作技巧與秘訣</a></h3>
+                    </div>
+                    <div class="col-md-3">
+                        <h3><a href="#">季節性點心的美味</a></h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 網頁底部 -->
+    <footer class="py-5 bg-dark">
+        <div class="container text-center">
+            <a href="https://x.com/TZicJJmwdmiZH6s"><img src="images/9.png" alt="推特 Logo" class="logogo"></a>
+            <a href="https://www.flickr.com/photos/200254990@N05/albums"><img src="images/10.png" alt="Flickr Logo" class="logogo"></a>
+            <a href="https://pse.is/6lb7wm"><img src="images/12.png" alt="IG Logo" class="logogo"></a>
+            <p class="m-0 text-white">&copy; 2024 千草の映像手記 | <a href="https://Chigusa-Chaga.github.io" class="text-white">Chigusa-Chaga.github.io</a></p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript 引入（包括 Bootstrap）-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
