@@ -119,6 +119,8 @@ a:hover {
     text-align: center;
 }
 
+
+
 /* 標題區 */
 header {
     background-color:#b1bcb0;
@@ -131,6 +133,9 @@ header {
 }
 
 /* 主內容標題樣式 */
+.honee {
+    margin-top: 17px;
+}
 #home h1 {
     font-size: 2rem;
     color: rgb(165, 160, 81); /* 使用您指定的主題顏色 */
