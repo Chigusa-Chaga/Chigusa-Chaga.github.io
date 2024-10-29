@@ -149,7 +149,26 @@ header {
     color: #555;
 }
 
+#about {
+    margin-top: -200px;
+}
 
+.aboutme p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.aboutme h1 {
+    font-size: 2rem;
+    color: rgb(165, 160, 81); /* 使用您指定的主題顏色 */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mehoto {
+    width: 530px;
+}
 
 /* 圖片輪播區 */
 .carousel {
