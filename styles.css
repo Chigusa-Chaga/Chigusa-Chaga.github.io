@@ -323,6 +323,20 @@ footer p {
 
 
 
+
+
+  .carousel-container {
+    margin-bottom: 100px;
+  }
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 可以是 cover, contain, fill 等 */
+}
+
+
+
 /* 媒體查詢：響應式設計 */
 @media (max-width: 768px) {
     .navbar-brand {

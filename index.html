@@ -44,6 +44,101 @@
     </div>
 </nav>
 
+    <style>
+        /* 設定輪播容器 */
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        /* 設定每張圖片 */
+        .carousel-slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        /* 顯示第一張圖片 */
+        .carousel-slide.active {
+            display: block;
+        }
+
+        /* 左右箭頭 */
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel-arrow.left {
+            left: 10px;
+        }
+
+        .carousel-arrow.right {
+            right: 10px;
+        }
+        
+    </style>
+    </head>
+    <body>
+
+    <div class="carousel-container">
+    <div class="carousel-slide active">
+        <img src="images/大圖/1.png" alt="圖片1">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/大圖/2.png" alt="圖片2">
+    </div>
+    <div class="carousel-slide">
+        <img src="images/大圖/3.png" alt="圖片3">
+    </div>
+
+    <!-- 左右箭頭 -->
+    <div class="carousel-arrow left" onclick="prevSlide()">❮</div>
+    <div class="carousel-arrow right" onclick="nextSlide()">❯</div>
+    </div>
+
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+    
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+    
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    
+        // 自動輪播
+        const autoSlideInterval = setInterval(nextSlide, 5000); // 每隔 3000 毫秒 (3秒) 切換圖片
+    
+        // 停止自動輪播 (可選)
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+    </script>
+    
+
+
+
+
+
 
     <!-- 頁面標題和標語 -->
     <header class="bg-light text-center py-5">
@@ -79,13 +174,19 @@
                     <div class="col-md-3">
                         <h3><a href="文章/Daifuku.html">大福（Daifuku）——日本和菓子的甜美享受</a></h3>
                         <a href="文章/Daifuku.html"><img src="images/Article pictures/大福.png" class=""></a>
-                        <h5>引用｜Pexels 上由 Han Sen 拍攝的相片: https://www.pexels.com/zh-tw/photo/10676682/</h5>
+                        <h5>圖片引用｜Pexels 上由 Han Sen 拍攝的相片: https://www.pexels.com/zh-tw/photo/10676682/</h5>
                     </div>
 
                     <div class="col-md-3">
                         <h3><a href="文章/Daifuku.html">羊羹（Yokan） ：傳統的滋味</a></h3>
                         <a href="文章/Oboroduki.html"><img src="images/Article pictures/羊羹.png" class=""></a>
-                        <h5>引用｜https://images.app.goo.gl/tUsi3HGeXRNE33MM8</h5>
+                        <h5>圖片引用｜https://images.app.goo.gl/tUsi3HGeXRNE33MM8</h5>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3><a href="文章/Sakura-Mochi.html">羊羹（Yokan） ：傳統的滋味</a></h3>
+                        <a href="文章/Sakura-Mochi.html"><img src="images/Article pictures/櫻餅.png" class=""></a>
+                        <h5>圖片引用｜https://images.app.goo.gl/n9NEYUfDQMZUKzFn8</h5>
                     </div>
             </section>
 
