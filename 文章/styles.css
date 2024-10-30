@@ -170,7 +170,7 @@ header {
     color: #C8894C; /* 使用您指定的主題顏色 */
     margin-top: 25px;
     margin-bottom: -10px;
-    text-align: left;
+    
 }
 
 
@@ -181,7 +181,10 @@ h5 {
     margin-bottom: 15px;
 }
 
-
+.map {
+    width: 300px;
+    float: left;
+}
 
 
 

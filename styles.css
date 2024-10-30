@@ -170,6 +170,10 @@ header {
     width: 530px;
 }
 
+h5 {
+    margin-bottom: 15px;
+}
+
 /* 圖片輪播區 */
 .carousel {
     margin-bottom: 2em;
@@ -232,6 +236,10 @@ header {
 
 #featured-articles .col-md-3 h3 a:hover {
     color: #7e7e3c;
+}
+
+#articles {
+    margin-top: -250px;
 }
 
 /* 底部區域 */
@@ -308,6 +316,10 @@ footer p {
     text-align: center;
   }
 
+  .grid-item h3 {
+    margin-top: 10px;
+    color: #065319 ;
+  }
 
 
 
